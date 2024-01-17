@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube.clone</title>
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="genaral.css">
+    <script src="script.js"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="left-header"> 
+            <img class="lines" src="icons/3lines.svg" alt="3lines">
+            <img class="youtube-symbol" src="icons/youtube_symbol.svg" alt="yt">
+             </div>
+        <div class="center-header">
+             <input class="searchbar" type="text" placeholder="Search">
+             <button class="search-button"><img class="search" src="icons/search.svg" alt=""></button> 
+             <button class="mike-button"><img class="mick" src="icons/mick.svg" alt="">
+             </div></button>
+             
+        <div class="right-header"> 
+            <img class="upload-icon" src="icons/upload.svg" alt="">
+            <img class="app-icon" src="icons/app.svg" alt="">
+            <div class="notifications-icon-container"><img class="notification-icon" src="icons/notification.svg" alt="">
+                <div class="notification-count">3</div>
+            </div>            
+            <img class="profile-icon" src="dps/profile.jpg" alt="">
+             </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-link"><img src="icons/home.svg" alt=""><div>Home</div></div>
+        <div class="sidebar-link"><img src="icons/explore.svg" alt=""><div>explore</div></div>
+        <div class="sidebar-link"><img src="icons/subs.svg" alt=""><div>Subscriptions</div></div>
+        <div class="sidebar-link"><img src="icons/orginals.svg" alt=""><div>Originals</div></div>
+        <div class="sidebar-link"><img src="icons/music.svg" alt=""><div>YouTube Music</div></div>
+        <div class="sidebar-link"><img src="icons/libary.svg" alt=""><div>Library</div></div>
+    </div>
+    
+    <div class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+           <button class="t2" onclick="openVideo('VIDEO_ID_1')"> <img class="t1" src="thumbnails/thumbnail-1.1.webp"></button>
+            <div class="video-time">2:54</div>
+            </div>
+    
+        <div class="video-info-grid">
+            <div class="video-dp" >
+                <img class="channel-dp" src="dps/channel-8.jpg">
+            </div>
+    
+            <div class="video-info">
+                <p class="video-title"> Sooreede (Telugu) - Salaar |Prabhas | Prithviraj | Prashanth Neel | Ravi Basrur | Hombale Films
+               </p>
+            <p class="video-owner">Hombale Flims</p>
+            <p class="video-views">10M views &#183; 1 week ago</p>
+        </div>
+        </div>
+        </div>
+    
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <button class="t2" onclick="openVideo('VIDEO_ID_2')"> <img class="t1" src="thumbnails/thumbnail-2.webp"></button>
+            <div class="video-time">8:13</div>
+           
+            </div>
+    
+        <div class="video-info-grid">
+            <div class="video-dp" >
+                <img class="channel-dp" src="dps/channel-2.jpg">
+            </div>
+    
+            <div class="video-info">
+                <p class="video-title">Learn Flexbox CSS in 8 minutes
+                </p>
+            <p class="video-owner">Slaying The Dragon</p>
+            <p class="video-views">1M views &#183; 1 year ago</p>
+        </div>
+        </div>
+        </div>
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <button class="t2" onclick="openVideo('VIDEO_ID_3')"> <img class="t1" src="thumbnails/thumbnail-3.webp"></button>
+            <div class="video-time">9:44</div>
+            </div>
+    
+        <div class="video-info-grid">
+            <div class="video-dp" >
+                <img class="channel-dp" src="dps/channel-3.jpg">
+            </div>
+    
+            <div class="video-info">
+                <p class="video-title">I Asked Googlers How to Get Hired</p>
+            <p class="video-owner">Namanh Kapur</p>
+            <p class="video-views">713k views &#183; 2 months ago</p>
+        </div>
+        </div>
+        </div>
+    
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <button class="t2" onclick="openVideo('VIDEO_ID_4')"> <img class="t1" src="thumbnails/thumbnail-4.webp"></button>
+            <div class="video-time">29:37</div>
+            </div>
+    
+        <div class="video-info-grid">
+            <div class="video-dp" >
+                <img class="channel-dp" src="dps/channel-4.jpg">
+            </div>
+    
+            <div class="video-info">
+                <p class="video-title">How to put an HTML website online(on the internet)
+                </p>
+            <p class="video-owner">SuperSimpleDev</p>
+            <p class="video-views">1M views &#183; 1 year ago</p>
+        </div>
+        </div>
+        </div>
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <button class="t2" onclick="openVideo('VIDEO_ID_5')"> <img class="t1" src="thumbnails/thumbnail-5.webp"></button>
+            <div class="video-time">15:28</div>
+            </div>
+    
+        <div class="video-info-grid">
+            <div class="video-dp" >
+                <img class="channel-dp" src="dps/channel-5.jpg">
+            </div>
+    
+            <div class="video-info">
+                <p class="video-title">13 Arrears|Random Video|Ft.Np,Akshaya|Blacksheep</p>
+            <p class="video-owner">Black Sheep</p>
+            <p class="video-views">14M views &#183; 2 years ago</p>
+        </div>
+        </div>
+        </div>
+    
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <button class="t2" onclick="openVideo('VIDEO_ID_6')"> <img class="t1" src="thumbnails/thumbnail-6.webp"></button>
+            <div class="video-time">2:13</div>
+            </div>
+    
+        <div class="video-info-grid">
+            <div class="video-dp" >
+                <img class="channel-dp" src="dps/channel-6.jpg">
+            </div>
+    
+            <div class="video-info">
+                <p class="video-title">ANIMAL:ABRAR'S ENTRY-JAMAL KUDU(FULL VIDEO)
+                </p>
+            <p class="video-owner">ST-Series</p>
+            <p class="video-views">25M views &#183; 1 week ago</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <button class="t2" onclick="openVideo('VIDEO_ID_7')"> <img class="t1" src="thumbnails/thumbnail-7.webp"></button>
+            <div class="video-time">3:03</div>
+            </div>
+    
+        <div class="video-info-grid">
+            <div class="video-dp" >
+                <img class="channel-dp" src="dps/channel-7.jpg">
+            </div>
+    
+            <div class="video-info">
+                <p class="video-title">ANIMAL:Yaalo Yaalaa (Audio) | Ranbir K, Rashmika,Bobby | Sandeep |Anurag Kulkarni, Jaani | Bhushan K
+
+                </p>
+            <p class="video-owner">T-Series Telugu</p>
+            <p class="video-views">3.4M views &#183; 3 weeks ago</p>
+        </div>
+        </div>
+        </div>
+    
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <button class="t2" onclick="openVideo('VIDEO_ID_8')"> <img class="t1" src="thumbnails/thumbnail-8.webp"></button>
+            <div class="video-time">2:54</div>
+           
+            </div>
+    
+        <div class="video-info-grid">
+            <div class="video-dp" >
+                <img class="channel-dp" src="dps/channel-8.jpg">
+            </div>
+    
+            <div class="video-info">
+                <p class="video-title">Salaar Release Trailer - Telugu | Prabhas | Prashanth Neel | Prithviraj | Shruthi | Hombale Films
+                </p>
+            <p class="video-owner">Hombale Films</p>
+            <p class="video-views">31M views &#183;3 days ago</p>
+        </div>
+        </div>
+        </div>
+    
+       
+ 
+    </div>
+
+    </div>
+
+
+</body>
+</html>
